@@ -86,7 +86,7 @@ function persistentData(storedCityHistory) {
     })
    
     //URL for database query to get the lat and lon based on the city name
-    var query1URL = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=5&appid="+ APIKey;
+    var query1URL = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=5&appid="+ APIKey;
 
     //Fetch call to get the lat and lon
     fetch(query1URL)
@@ -103,7 +103,7 @@ function persistentData(storedCityHistory) {
             console.log(nameOfCity);
 
         //URL for database query
-        var query2URL = "https://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon="+ lon +"&appid=" + APIKey;
+        var query2URL = "http://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon="+ lon +"&appid=" + APIKey;
 
         //Fetch weather data using lat and lon from previous fetch
         fetch(query2URL)
@@ -172,7 +172,7 @@ $(document).on("click", 'button', function(event) {
     })
    
     //URL for database query to get the lat and lon based on the city name
-    var query1URL = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=5&appid="+ APIKey;
+    var query1URL = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=5&appid="+ APIKey;
 
     //Fetch call to get the lat and lon
     fetch(query1URL)
@@ -189,7 +189,7 @@ $(document).on("click", 'button', function(event) {
             console.log(nameOfCity);
 
         //URL for database query
-        var query2URL = "https://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon="+ lon +"&appid=" + APIKey;
+        var query2URL = "http://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon="+ lon +"&appid=" + APIKey;
 
         //Fetch weather data using lat and lon from previous fetch
         fetch(query2URL)
