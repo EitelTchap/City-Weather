@@ -86,7 +86,7 @@ function persistentData(storedCityHistory) {
     })
    
     //URL for database query to get the lat and lon based on the city name
-    var query1URL = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=5&appid="+ APIKey;
+    var query1URL = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=5&appid="+ APIKey;
 
     //Fetch call to get the lat and lon
     fetch(query1URL)
