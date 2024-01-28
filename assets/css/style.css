@@ -1,0 +1,23 @@
+#today div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: blue;
+    font-size: 12.5px;
+    color: white;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 150px;
+}
